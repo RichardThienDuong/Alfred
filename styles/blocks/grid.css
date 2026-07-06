@@ -1,0 +1,13 @@
+.grid {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    height: 100%;
+}
+
+.grid__box {
+    border: 1px solid rgb(89, 148, 235);
+    border-radius: 10px;
+    padding: 10px;
+}

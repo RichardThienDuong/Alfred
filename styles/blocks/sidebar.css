@@ -1,0 +1,42 @@
+
+
+.sidebar__button {
+    color: rgb(131, 197, 252);
+}
+
+.sidebar__image {
+    width: 60px;
+}
+
+
+.helix {
+  position: relative;
+  width: 120px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: spin 6s linear infinite;
+}
+
+
+.helix span {
+  position: absolute;
+  left: 50%;
+  top: calc(var(--i) * 30px);
+  width: 90px;
+  height: 4px;
+  background: #6ffaff;
+  box-shadow: 0 0 12px #00eaff;
+  transform:
+    translateX(-50%)
+    rotateY(calc(var(--i) * 36deg));
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg) rotateX(10deg);
+  }
+
+  to {
+    transform: rotateY(360deg) rotateX(10deg);
+  }
+}
